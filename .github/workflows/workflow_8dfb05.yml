@@ -1,0 +1,12 @@
+name: Build & Deploy
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test-stage:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare workspace
+        run: echo "ok"
